@@ -4,11 +4,11 @@ const router= express.Router();
 
 // <------------------- RUTAS DE LA APLICACION ---------------------->
 router.get('/',(req,res)=>{
-    res.send('Index de routes');
+    res.render('index.hbs');   //index.hbs de la ruta /views
 });
 // <------------------- RUTAS DE "ACERCA DE" ---------------------->
 router.get('/about',(req,res)=>{
-    res.send('Aplicacion para la materia de Computo en la Nube');
+    res.render('about.hbs');  //about.hbs de la ruta /views
 });
 
 

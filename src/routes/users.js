@@ -4,12 +4,12 @@ const router= express.Router();
 
 // <----------------- RUTA PARA EL REGISTRO DE USUARIOS ------------------>
 router.get('/users/singin',(req,res)=>{
-    res.send('Pagina para registro de usuarios');
+    res.render('users/singin.hbs');
 });
 
 // <----------------- RUTA PARA EL ACCESO DE USUARIOS   ------------------>
 router.get('/users/login',(req,res)=>{
-    res.send('Login de la aplicacion');
+    res.render('users/login.hbs');
 });
 
 module.exports=router;
