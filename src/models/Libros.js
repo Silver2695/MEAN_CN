@@ -2,38 +2,38 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const libroSchema = new Schema({
-  Id: {
-    type: int,
-    required: true
-  },
-  Nombre_Libro: {
+  id: {
     type: String,
     required: true
   },
-  Editorial: {
+  titulo: {
     type: String,
     required: true
   },
-  Autor: {
+  editorial: {
     type: String,
     required: true
   },
-  Genero:{
+  autor: {
+    type: String,
+    required: true
+  },
+  genero:{
       type: String,
       required: true
   },
-  Pais:{
+  pais:{
       type: String,
       required: true
   },
-  Num_Paginas:{
-      type: int,
+  Npaginas:{
+      type: String,
       required: true
   },
-  Fecha: {
+  fecha: {
     type: Date,
     default: Date.now
   }
 });
 
-module.exports = mongoose.model('Libros', NoteSchema);
+module.exports = mongoose.model('Libros', libroSchema);
